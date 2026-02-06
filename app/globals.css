@@ -282,3 +282,250 @@ a {
 [data-theme='clean'] .from-slate-950\/70 {
   --tw-gradient-from: rgba(255, 255, 255, 0.82) var(--tw-gradient-from-position) !important;
 }
+
+.featured-heading,
+.businesses-heading,
+.tech-stack-heading,
+.newsletter-heading,
+.newsletter-copy,
+.project-card-content,
+.business-card-content {
+  text-align: center;
+}
+
+.project-card,
+.business-card {
+  min-height: 122px;
+}
+
+.project-link,
+.business-url {
+  letter-spacing: 0.16em;
+}
+
+.tech-stack-wrap {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.mission-tagline {
+  text-wrap: balance;
+}
+
+[data-theme='miami'] .featured-section {
+  margin-top: 2rem;
+}
+
+[data-theme='miami'] .featured-heading,
+[data-theme='miami'] .businesses-heading,
+[data-theme='miami'] .newsletter-heading {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+[data-theme='miami'] .featured-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+[data-theme='miami'] .project-card {
+  border-radius: 1rem;
+  min-height: 144px;
+  padding: 0.75rem;
+}
+
+[data-theme='miami'] .project-card-accent {
+  opacity: 0.98;
+  filter: saturate(1.2) contrast(1.08);
+}
+
+[data-theme='miami'] .project-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+[data-theme='miami'] .project-subtitle {
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
+
+[data-theme='miami'] .project-link {
+  margin-top: 0.55rem;
+  font-size: 0.65rem;
+}
+
+[data-theme='miami'] .businesses-grid {
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+
+[data-theme='miami'] .business-card {
+  border-radius: 999px;
+  min-height: 0;
+  padding: 0.55rem 0.95rem;
+}
+
+[data-theme='miami'] .business-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+[data-theme='miami'] .business-emoji,
+[data-theme='miami'] .business-name,
+[data-theme='miami'] .business-description,
+[data-theme='miami'] .business-url {
+  margin: 0;
+}
+
+[data-theme='miami'] .business-name {
+  font-size: 0.78rem;
+}
+
+[data-theme='miami'] .business-description,
+[data-theme='miami'] .business-url {
+  font-size: 0.65rem;
+}
+
+[data-theme='miami'] .tech-stack-section {
+  display: none;
+}
+
+[data-theme='midnight'] .featured-heading,
+[data-theme='midnight'] .businesses-heading,
+[data-theme='midnight'] .tech-stack-heading,
+[data-theme='midnight'] .newsletter-heading {
+  font-family: var(--font-mono), 'IBM Plex Mono', 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace;
+  letter-spacing: 0.03em;
+}
+
+[data-theme='midnight'] .featured-heading::before,
+[data-theme='midnight'] .businesses-heading::before,
+[data-theme='midnight'] .tech-stack-heading::before,
+[data-theme='midnight'] .newsletter-heading::before {
+  content: '> ';
+  color: rgb(var(--accent-2-rgb));
+}
+
+[data-theme='midnight'] .featured-grid,
+[data-theme='midnight'] .businesses-grid {
+  gap: 0.45rem;
+}
+
+[data-theme='midnight'] .project-card,
+[data-theme='midnight'] .business-card,
+[data-theme='midnight'] .newsletter-section,
+[data-theme='midnight'] .tech-stack-wrap {
+  border-radius: 0.7rem;
+}
+
+[data-theme='midnight'] .project-card {
+  border-left: 3px solid rgba(var(--accent-2-rgb), 0.9);
+  min-height: 112px;
+  padding: 0.65rem 0.65rem 0.65rem 0.75rem;
+}
+
+[data-theme='midnight'] .project-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.32rem;
+  font-size: 0.88rem;
+}
+
+[data-theme='midnight'] .project-title::before {
+  content: '';
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: rgb(var(--accent-2-rgb));
+  box-shadow: 0 0 10px rgba(var(--accent-2-rgb), 0.85);
+  flex: none;
+}
+
+[data-theme='midnight'] .project-subtitle {
+  font-size: 0.72rem;
+  margin-top: 0.3rem;
+}
+
+[data-theme='midnight'] .project-link {
+  margin-top: 0.45rem;
+  font-size: 0.62rem;
+}
+
+[data-theme='midnight'] .business-card {
+  min-height: 106px;
+  padding: 0.6rem;
+}
+
+[data-theme='midnight'] .business-name {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+}
+
+[data-theme='midnight'] .business-description,
+[data-theme='midnight'] .business-url {
+  font-size: 0.65rem;
+}
+
+[data-theme='midnight'] .newsletter-section {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+}
+
+[data-theme='clean'] .main-shell {
+  max-width: 52rem;
+}
+
+[data-theme='clean'] .featured-section,
+[data-theme='clean'] .businesses-section,
+[data-theme='clean'] .tech-stack-section,
+[data-theme='clean'] .newsletter-section {
+  margin-top: 2.5rem;
+}
+
+[data-theme='clean'] .project-card {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(31, 56, 90, 0.22);
+  backdrop-filter: blur(4px);
+  min-height: 0;
+  border-radius: 0.9rem;
+  box-shadow: 0 7px 18px rgba(24, 45, 80, 0.09);
+}
+
+[data-theme='clean'] .project-card-accent {
+  display: none;
+}
+
+[data-theme='clean'] .project-link {
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid rgba(31, 56, 90, 0.24);
+  padding: 0.35rem 0.78rem;
+  letter-spacing: 0.11em;
+  margin-top: 0.65rem;
+}
+
+[data-theme='clean'] .project-subtitle {
+  color: rgba(var(--ink-rgb), 0.78);
+}
+
+[data-theme='clean'] .business-card {
+  box-shadow: 0 8px 18px rgba(24, 45, 80, 0.08);
+}
+
+[data-theme='clean'] .tech-stack-wrap,
+[data-theme='clean'] .newsletter-section {
+  box-shadow: 0 10px 24px rgba(24, 45, 80, 0.08);
+}
+
+[data-theme='clean'] .mission-tagline {
+  color: rgba(var(--ink-rgb), 0.64);
+}
+
+[data-theme='clean'] .site-footer {
+  margin-top: 2.75rem;
+  padding-bottom: 0.5rem;
+}

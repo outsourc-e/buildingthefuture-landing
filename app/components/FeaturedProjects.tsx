@@ -59,9 +59,9 @@ export function FeaturedProjects() {
   }, []);
 
   return (
-    <section className="mt-8">
-      <h2 className="mb-3 text-lg font-semibold text-white">Featured Projects</h2>
-      <div className="grid gap-3 sm:grid-cols-2">
+    <section className="featured-section mt-7">
+      <h2 className="featured-heading mb-3 text-center text-lg font-semibold text-white">Featured Projects</h2>
+      <div className="featured-grid grid gap-2.5 sm:grid-cols-2">
         {projects.map((project, index) => {
           // Internal routes should stay in-tab; external demos open in a new tab.
           const isExternal = project.href.startsWith('http');
@@ -76,13 +76,15 @@ export function FeaturedProjects() {
                 href={project.href}
                 target={isExternal ? '_blank' : undefined}
                 rel={isExternal ? 'noopener noreferrer' : undefined}
-                className="glass premium-hover group relative block overflow-hidden rounded-2xl p-4 sm:p-5"
+                className="project-card glass premium-hover group relative block overflow-hidden rounded-2xl p-3.5 sm:p-4"
               >
-                <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${project.accent} opacity-90`} />
-                <div className="relative z-10">
-                  <p className="text-base font-semibold text-white">{project.title}</p>
-                  <p className="mt-1 text-sm text-slate-200">{project.subtitle}</p>
-                  <p className="mt-4 text-xs uppercase tracking-[0.2em] text-accent-3 transition group-hover:text-white">View demo</p>
+                <div className={`project-card-accent pointer-events-none absolute inset-0 bg-gradient-to-br ${project.accent} opacity-90`} />
+                <div className="project-card-content relative z-10 text-center">
+                  <p className="project-title text-base font-semibold text-white">{project.title}</p>
+                  <p className="project-subtitle mt-1 text-sm text-slate-200">{project.subtitle}</p>
+                  <p className="project-link mt-3 text-xs uppercase tracking-[0.2em] text-accent-3 transition group-hover:text-white">
+                    View demo
+                  </p>
                 </div>
               </Link>
             </motion.div>

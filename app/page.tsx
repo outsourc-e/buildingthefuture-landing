@@ -23,16 +23,18 @@ const personStructuredData = {
 
 export default function HomePage() {
   return (
-    <main className="mx-auto min-h-screen w-full max-w-3xl px-3 pb-12 pt-6 sm:px-6 sm:pt-10">
+    <main className="main-shell mx-auto min-h-screen w-full max-w-3xl px-3 pb-12 pt-6 sm:px-6 sm:pt-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personStructuredData) }} />
       <HeroSection />
       <SocialLinksRow />
       <FeaturedProjects />
       <BusinessesSection />
       <TechStackBadges />
-      <MissionStatement />
       <NewsletterCTA />
-      <footer className="mt-10 text-center text-xs text-muted/80">© 2026 buildingthefuture.io · Made with ⚡ and AI</footer>
+      <footer className="site-footer mt-8 text-center text-xs text-muted/80">
+        <MissionStatement />
+        <p className="mt-2">© 2026 buildingthefuture.io · Made with ⚡ and AI</p>
+      </footer>
       <ThemeSwitcher />
     </main>
   );

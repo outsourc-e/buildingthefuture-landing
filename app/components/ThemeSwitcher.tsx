@@ -32,6 +32,8 @@ export function ThemeSwitcher() {
     setActiveTheme(theme);
   };
 
+  const activeLabel = THEMES.find((theme) => theme.name === activeTheme)?.label ?? 'Ghibli';
+
   return (
     <div className="fixed bottom-3 right-3 z-50 sm:bottom-5 sm:right-5">
       <div className="theme-switcher-shell flex items-center gap-1.5 rounded-full p-1.5">
@@ -44,6 +46,7 @@ export function ThemeSwitcher() {
               type="button"
               aria-label={`Switch to ${theme.label} theme`}
               aria-pressed={isActive}
+              title={theme.label}
               onClick={() => setTheme(theme.name)}
               className={`theme-dot h-6 w-6 rounded-full border ${
                 isActive ? 'scale-110 border-white/80' : 'border-white/35'
@@ -53,6 +56,7 @@ export function ThemeSwitcher() {
           );
         })}
       </div>
+      <p className="mt-1 text-center text-[10px] font-medium uppercase tracking-[0.14em] text-slate-300">{activeLabel}</p>
     </div>
   );
 }

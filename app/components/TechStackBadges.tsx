@@ -18,13 +18,13 @@ export function TechStackBadges() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.45, ease: 'easeOut' }}
-      className="mt-8"
+      className="tech-stack-section mt-7"
     >
-      <h2 className="mb-2 text-center text-sm font-medium uppercase tracking-[0.18em] text-slate-300 md:mb-2.5">
+      <h2 className="tech-stack-heading mb-1.5 text-center text-sm font-medium uppercase tracking-[0.18em] text-slate-300 md:mb-2">
         Powered By
       </h2>
-      <div className="glass badge-shimmer relative overflow-hidden rounded-xl border border-white/15 bg-slate-950/40 p-2 md:p-2.5">
-        <div className="flex flex-nowrap items-center gap-1.5 overflow-x-auto scroll-smooth pb-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden md:justify-center md:overflow-x-visible md:pb-0">
+      <div className="tech-stack-wrap glass badge-shimmer relative overflow-hidden rounded-xl border border-white/15 bg-slate-950/40 p-1.5 md:p-2">
+        <div className="tech-stack-row flex flex-nowrap items-center gap-1 overflow-x-auto scroll-smooth pb-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden md:justify-center md:overflow-x-visible md:pb-0">
           {stack.map((item, index) => (
             <motion.div
               key={item.platform}
@@ -38,16 +38,16 @@ export function TechStackBadges() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass premium-hover badge-hover group inline-flex overflow-hidden rounded-md border border-white/20 text-[10px] font-semibold uppercase tracking-[0.08em] transition hover:border-accent-3/60"
+                className="tech-badge glass premium-hover badge-hover group inline-flex overflow-hidden rounded-md border border-white/20 text-[10px] font-semibold uppercase tracking-[0.08em] transition hover:border-accent-3/60"
                 aria-label={`${item.platform} - ${item.role}`}
               >
-                <span className="bg-slate-950/80 px-2 py-1 text-slate-100">{item.platform}</span>
-                <span className={`${item.tone} px-2 py-1`}>{item.role}</span>
+                <span className="bg-slate-950/80 px-1.5 py-1 text-slate-100">{item.platform}</span>
+                <span className={`${item.tone} px-1.5 py-1`}>{item.role}</span>
               </Link>
             </motion.div>
           ))}
         </div>
-        <p className="pointer-events-none mt-1 text-[10px] uppercase tracking-[0.12em] text-slate-400 md:hidden">
+        <p className="tech-stack-helper pointer-events-none mt-1 text-center text-[10px] uppercase tracking-[0.12em] text-slate-400 md:hidden">
           Swipe to scroll
         </p>
         <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-slate-950/70 to-transparent md:hidden" />
