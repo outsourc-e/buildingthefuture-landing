@@ -60,8 +60,8 @@ export function HeroSection() {
       <div className="pointer-events-none absolute -right-24 -top-24 h-56 w-56 rounded-full bg-accent-2/30 blur-3xl" />
       <div className="pointer-events-none absolute -left-20 -bottom-24 h-48 w-48 rounded-full bg-accent-1/25 blur-3xl" />
 
-      <div className="relative z-10 p-4 sm:p-5">
-        <div className="glass glow-ring rounded-3xl p-6 sm:p-8">
+      <div className="relative z-10 p-3 sm:p-5">
+        <div className="glass glow-ring rounded-3xl p-5 sm:p-8">
           <div className="flex flex-col items-center text-center">
             <div className="mb-5 rounded-3xl border border-white/30 bg-white/10 p-1.5 shadow-[0_0_36px_rgba(74,144,217,0.35)]">
               <Image

@@ -34,9 +34,9 @@ export function BusinessesSection() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.45, ease: 'easeOut' }}
-      className="mt-10"
+      className="mt-8"
     >
-      <h2 className="mb-4 text-lg font-semibold text-white">Businesses</h2>
+      <h2 className="mb-3 text-lg font-semibold text-white">Businesses</h2>
       <div className="grid gap-3 sm:grid-cols-3">
         {businesses.map((business, index) => (
           <motion.div

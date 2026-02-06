@@ -59,9 +59,9 @@ export function FeaturedProjects() {
   }, []);
 
   return (
-    <section className="mt-10">
-      <h2 className="mb-4 text-lg font-semibold text-white">Featured Projects</h2>
-      <div className="grid gap-4 sm:grid-cols-2">
+    <section className="mt-8">
+      <h2 className="mb-3 text-lg font-semibold text-white">Featured Projects</h2>
+      <div className="grid gap-3 sm:grid-cols-2">
         {projects.map((project, index) => {
           // Internal routes should stay in-tab; external demos open in a new tab.
           const isExternal = project.href.startsWith('http');
