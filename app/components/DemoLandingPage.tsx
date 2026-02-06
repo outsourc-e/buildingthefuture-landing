@@ -63,12 +63,28 @@ export function DemoLandingPage({
   };
 
   return (
-    <main className="mx-auto min-h-screen w-full max-w-6xl px-4 pb-16 pt-8 sm:px-6 sm:pt-10">
+    <main className="mx-auto min-h-screen w-full max-w-6xl px-3 pb-12 pt-4 sm:px-6 sm:pt-8">
+      {/* Back button — fixed top-left on mobile for easy navigation */}
+      <motion.div
+        initial={{ opacity: 0, x: -10 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
+        className="mb-3 sm:mb-4"
+      >
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-slate-200 backdrop-blur-md transition hover:border-accent-3/50 hover:bg-white/10 hover:text-white sm:text-sm"
+        >
+          <span>←</span>
+          <span>Home</span>
+        </Link>
+      </motion.div>
+
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55, ease: 'easeOut' }}
-        className="glass glow-ring relative overflow-hidden rounded-3xl p-7 sm:p-12"
+        className="glass glow-ring relative overflow-hidden rounded-3xl p-5 sm:p-12"
       >
         <div className="pointer-events-none absolute -right-24 -top-20 h-64 w-64 rounded-full bg-accent-3/25 blur-3xl" />
         <div className="pointer-events-none absolute -left-16 bottom-8 h-56 w-56 rounded-full bg-accent-1/25 blur-3xl" />
@@ -181,21 +197,6 @@ export function DemoLandingPage({
         </form>
         {isSuccess ? <p className="mt-3 text-xs text-accent-3">Thanks! You&apos;re on the list.</p> : null}
       </motion.section>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.8 }}
-        transition={{ duration: 0.3, delay: 0.08 }}
-        className="mt-8"
-      >
-        <Link
-          href="/"
-          className="glass premium-hover inline-flex items-center rounded-xl border border-white/20 bg-white/5 px-4 py-2 text-sm text-slate-100 transition hover:border-accent-3 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-3/65 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1222]"
-        >
-          ← Back to buildingthefuture.io
-        </Link>
-      </motion.div>
 
       {isExpanded ? (
         <div
