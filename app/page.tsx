@@ -5,6 +5,7 @@ import { NewsletterCTA } from './components/NewsletterCTA';
 import { SocialLinksRow } from './components/SocialLinksRow';
 import { BusinessesSection } from './components/BusinessesSection';
 import { TechStackBadges } from './components/TechStackBadges';
+import { ThemeSwitcher } from './components/ThemeSwitcher';
 
 const personStructuredData = {
   '@context': 'https://schema.org',
@@ -32,6 +33,7 @@ export default function HomePage() {
       <MissionStatement />
       <NewsletterCTA />
       <footer className="mt-10 text-center text-xs text-muted/80">© 2026 buildingthefuture.io · Made with ⚡ and AI</footer>
+      <ThemeSwitcher />
     </main>
   );
 }
