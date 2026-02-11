@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://buildingthefuture.io'),
   title: 'Eric | Building the Future',
   description:
-    'Developer and entrepreneur shipping AI tools, platforms, and infrastructure. Explore projects from OpenClaw Studio to ClawdHub.',
-  keywords: ['buildingthefuture.io', 'Eric', 'AI tools', 'developer', 'entrepreneur', 'OpenClaw Studio'],
+    'Developer and entrepreneur shipping AI tools, platforms, and infrastructure. Explore projects from ClawSuite to ClawdHub.',
+  keywords: ['buildingthefuture.io', 'Eric', 'AI tools', 'developer', 'entrepreneur', 'ClawSuite'],
   openGraph: {
     title: 'Eric | Building the Future',
     description: 'A premium developer hub for projects, stack, and contact.',

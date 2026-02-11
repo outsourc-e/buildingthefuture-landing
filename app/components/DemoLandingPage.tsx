@@ -5,6 +5,11 @@ import Link from 'next/link';
 import { FormEvent, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
+type DemoLandingPageLink = {
+  label: string;
+  href: string;
+};
+
 type DemoLandingPageProps = {
   name: string;
   tagline: string;
@@ -14,6 +19,7 @@ type DemoLandingPageProps = {
   previewImageSrc: string;
   previewImageAlt: string;
   waitlistCta: string;
+  projectLinks?: DemoLandingPageLink[];
 };
 
 export function DemoLandingPage({
@@ -24,7 +30,8 @@ export function DemoLandingPage({
   visualLabel,
   previewImageSrc,
   previewImageAlt,
-  waitlistCta
+  waitlistCta,
+  projectLinks
 }: DemoLandingPageProps) {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -95,6 +102,21 @@ export function DemoLandingPage({
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-ink sm:text-6xl">{name}</h1>
           <p className="mt-3 text-xl text-accent-1 sm:text-2xl">{tagline}</p>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-100 sm:text-lg">{description}</p>
+          {projectLinks?.length ? (
+            <div className="mt-5 flex flex-wrap gap-2.5">
+              {projectLinks.map((projectLink) => (
+                <Link
+                  key={projectLink.href}
+                  href={projectLink.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.14em] text-slate-100 transition hover:border-accent-3/60 hover:bg-white/15 hover:text-white"
+                >
+                  {projectLink.label}
+                </Link>
+              ))}
+            </div>
+          ) : null}
         </div>
       </motion.section>
 

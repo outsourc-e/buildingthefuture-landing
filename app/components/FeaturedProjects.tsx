@@ -6,8 +6,8 @@ import { motion, useReducedMotion } from 'framer-motion';
 
 const projects = [
   {
-    title: '🤖 OpenClaw Studio',
-    subtitle: 'Your AI gateway command center',
+    title: '🤖 ClawSuite',
+    subtitle: 'All-in-one command center for OpenClaw',
     href: '/openclaw',
     accent: 'from-accent-2/35 via-accent-3/20 to-accent-1/15'
   },
