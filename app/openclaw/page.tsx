@@ -12,8 +12,8 @@ export default function OpenClawPage() {
       ]}
       features={['Chat', 'Terminal', 'Files', 'Skills', 'Cron', 'Dashboard']}
       visualLabel="ClawSuite workspace with command panels, file context, and live operations telemetry."
-      previewImageSrc="/assets/screenshots/openclaw-studio.jpg"
-      previewImageAlt="ClawSuite dashboard preview"
+      previewImageSrc="/assets/screenshots/clawsuite-dashboard.png"
+      previewImageAlt="ClawSuite dashboard — real-time agent monitoring, usage tracking, and task management"
       waitlistCta="Follow ClawSuite updates, releases, and module rollouts."
     />
   );
