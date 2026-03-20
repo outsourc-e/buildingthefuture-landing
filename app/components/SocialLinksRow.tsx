@@ -7,7 +7,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 const links = [
   {
     label: 'X / Twitter',
-    href: 'https://x.com/outsourc_e',
+    href: 'https://x.com/outsource_',
     bg: 'bg-black',
     ring: 'ring-white/20',
     icon: (

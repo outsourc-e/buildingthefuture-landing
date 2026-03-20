@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Eric | Building the Future',
     description: 'Developer/entrepreneur building AI products.',
-    creator: '@outsourc_e',
+    creator: '@outsource_',
     images: ['/assets/og-cover.png']
   },
   alternates: {

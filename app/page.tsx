@@ -11,9 +11,9 @@ const personStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Eric',
-  alternateName: '@outsourc_e',
+  alternateName: '@outsource_',
   url: 'https://buildingthefuture.io',
-  sameAs: ['https://x.com/outsourc_e', 'https://github.com/outsourc-e'],
+  sameAs: ['https://x.com/outsource_', 'https://github.com/outsourc-e'],
   jobTitle: 'Developer & Entrepreneur',
   worksFor: {
     '@type': 'Organization',

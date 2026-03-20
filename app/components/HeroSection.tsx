@@ -75,7 +75,7 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">Eric</h1>
-            <p className="mt-1 font-mono text-xs uppercase tracking-[0.26em] text-accent-3">@outsourc_e</p>
+            <p className="mt-1 font-mono text-xs uppercase tracking-[0.26em] text-accent-3">@outsource_</p>
             <p className="mt-4 h-6 text-sm font-medium text-accent-1 sm:text-base">
               {typedTagline}
               <span className="ml-1 inline-block h-4 w-[2px] animate-pulse bg-accent-3 align-middle" />
