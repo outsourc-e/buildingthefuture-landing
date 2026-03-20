@@ -12,15 +12,15 @@ const projects = [
     accent: 'from-accent-2/35 via-accent-3/20 to-accent-1/15'
   },
   {
-    title: '⚡ AI Workforce',
-    subtitle: 'Autonomous agent swarm platform',
-    href: '/ai-workforce',
+    title: '🧠 Hermes Workspace',
+    subtitle: 'Open-source AI agent workspace',
+    href: 'https://github.com/outsourc-e/hermes-workspace',
     accent: 'from-accent-1/30 via-accent-3/20 to-accent-2/15'
   },
   {
-    title: '🌅 Project Aurora',
-    subtitle: 'All-in-one business command center',
-    href: '/aurora',
+    title: '⚡ LuxeLabOS',
+    subtitle: 'AI-powered creator management suite',
+    href: 'https://luxelabmgmt.com',
     accent: 'from-accent-1/25 via-accent-2/20 to-accent-3/15'
   },
   {
