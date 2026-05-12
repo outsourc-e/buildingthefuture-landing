@@ -28,6 +28,12 @@ const projects = [
     subtitle: 'B2B operations platform',
     href: 'https://myagencylab.com',
     accent: 'from-accent-3/30 via-accent-2/20 to-accent-1/15'
+  },
+  {
+    title: '⚡ BenchLoop',
+    subtitle: 'Local LLM benchmarking — quality, speed, agent loop',
+    href: 'https://bench-loop.com',
+    accent: 'from-emerald-500/30 via-accent-3/20 to-accent-2/15'
   }
 ];
 
@@ -61,7 +67,7 @@ export function FeaturedProjects() {
   return (
     <section className="featured-section mt-7">
       <h2 className="featured-heading mb-3 text-center text-lg font-semibold text-white">Featured Projects</h2>
-      <div className="featured-grid grid gap-2.5 sm:grid-cols-2">
+      <div className="featured-grid grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => {
           // Internal routes should stay in-tab; external demos open in a new tab.
           const isExternal = project.href.startsWith('http');
