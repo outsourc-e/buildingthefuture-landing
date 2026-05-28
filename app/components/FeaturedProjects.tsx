@@ -34,6 +34,12 @@ const projects = [
     subtitle: 'Local LLM benchmarking — quality, speed, agent loop',
     href: 'https://bench-loop.com',
     accent: 'from-emerald-500/30 via-accent-3/20 to-accent-2/15'
+  },
+  {
+    title: '💬 Join the Discord',
+    subtitle: 'Builders, agents, and the people building both — come hang out',
+    href: '/discord',
+    accent: 'from-indigo-500/35 via-violet-500/25 to-blue-500/15'
   }
 ];
 
