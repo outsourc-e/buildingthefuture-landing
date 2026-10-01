@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "buildingthefuture-landing",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "routes": [{"pattern":"buildingthefuture.io","custom_domain":true},{"pattern":"www.buildingthefuture.io","custom_domain":true}],
+  "assets": { "directory": "./out", "html_handling": "auto-trailing-slash", "not_found_handling": "404-page" }
+}
